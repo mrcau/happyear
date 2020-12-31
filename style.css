@@ -1,0 +1,138 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  text-align:center;
+}
+body{
+  width:100vw;
+  height:100vh;
+}
+.con{
+  margin:auto;
+  min-width:500px;/* 
+  max-width:800px;
+  min-height:600px; */
+  height:100%;
+  display:flex;
+  flex-direction:column; 
+  border:solid 5px;  
+  position:relative;
+}
+header{
+  font-size:1.8rem;
+  font-weight:bold;
+  padding:0.5rem;
+  background:gray;
+}
+input{display:none;}
+
+label{
+  cursor:pointer;
+  transition:all 100ms;
+ font-size:2rem;
+  position:absolute;
+  right:10px;
+  top:5px;
+}
+input[id="start"]:checked ~ main .box{
+    animation:doldol 4s linear infinite;
+  width:35vw;
+  height:35vh;
+}
+input[id="start"]:checked ~ main{
+    perspective:700px;
+}
+input[id="start"]:checked ~ .label1{
+    display:none;
+}
+input[id="start"]:checked ~ .label2{
+    display:block;
+}
+
+
+label:hover{
+  transform:scale(1.2);
+}
+label:active{
+  transform:scale(0.8);
+}
+.label2{
+  display:none;
+}
+main{
+  display:flex;
+  flex:auto;
+  background:url('https://image.freepik.com/free-vector/vector-illustration-of-beautiful-background-morning-jungle-bright-jungle-with-ferns-and-flowers-for-design-game-websites-and-mobile-phones-printing_212168-86.jpg') center/cover;
+ 
+}
+.box{
+  transform-style:preserve-3d;
+  position:relative;  
+  margin: auto;
+  width:0px;
+  height:0px;
+  transition:all 300ms;
+}
+
+.items{
+  background: rgba(0,0,0,0.2);
+  width:100%;
+  height:100%;
+  cursor:pointer;
+  line-height:300px;
+  position:absolute;
+  font-size:18vw; 
+  user-select: none;
+  /* backface-visibility:hidden; */
+}
+.items:hover{
+    background: rgba(0,0,255,0.5);
+}
+.items:active{
+    background: rgba(255,0,0,0.5);
+}
+.item1{
+  transform:rotateY(0deg) translateZ(30vw);
+}
+.item2{
+  transform:rotateY(60deg)translateZ(30vw);
+}
+.item3{
+  transform:rotateY(120deg)translateZ(30vw);
+}
+.item4{
+  transform:rotateY(180deg)translateZ(30vw);
+}
+.item5{
+  transform:rotateY(240deg)translateZ(30vw);
+}
+.item6{
+  transform:rotateY(300deg)translateZ(30vw);
+}
+footer{
+  padding:1rem;
+  background:gray;
+  color:white;
+}
+
+@keyframes doldol{
+  to{
+    transform:rotateY(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
