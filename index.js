@@ -15,7 +15,6 @@ let time = null;
 let timer = 30;
 let game = false;
 label1.innerHTML = timer;
-
 const timeCount = () => {
     time = setInterval(() => {
         if (timer > 0) {
@@ -55,6 +54,8 @@ const stop = () => {
     clearInterval(time);
 }
 
+
+stop();
 
 
 start.addEventListener('click', play);

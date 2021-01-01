@@ -180,26 +180,10 @@ footer {
     .box {
         width: 20vw;
         height: 20vh;
+        /* transform-style: preserve-3d; */
+
     }
     .items {
         font-size: 15vw;
     }
-    /* .item1{
-  transform:rotateY(0deg) translateZ(20vw);
-}
-.item2{
-  transform:rotateY(60deg)translateZ(20vw);
-}
-.item3{
-  transform:rotateY(120deg)translateZ(20vw);
-}
-.item4{
-  transform:rotateY(180deg)translateZ(20vw);
-}
-.item5{
-  transform:rotateY(240deg)translateZ(20vw);
-}
-.item6{
-  transform:rotateY(300deg)translateZ(20vw);
-} */
 }
