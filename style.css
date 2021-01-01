@@ -1,187 +1,190 @@
-*{
-  box-sizing:border-box;
-  margin:0;
-  text-align:center;
-}
-body{
-  width:100vw;
-  height:100vh;
-}
-.con{
-  margin:auto;
-  min-width:500px;/* 
-  max-width:800px;
-  min-height:600px; */
-  height:100%;
-  display:flex;
-  flex-direction:column; 
-  border:solid 5px;  
-  position:relative;
-}
-button{
-  font-size: 2rem;
-  font-weight: bold;
-  cursor:pointer;
-  outline: none;
-  border: 2px solid;
-}
-button:hover{
-  background-color: gold;
-}
-button:active{
-  background-color:#f03a17;
-  color: aliceblue;
-}
-header{
-  font-size:1.8rem;
-  font-weight:bold;
-  padding:0.5rem;
-  background:gray;
-}
-input{display:none;}
-
-label{
-  display:none;
-}
-.label2{
-  cursor:pointer;
-  transition:all 100ms;
- font-size:2rem;
-  position:absolute;
-  right:10px;
-  top:5px;
-}
-.label1{
-  cursor:pointer;
-  transition:all 100ms;
- font-size:2rem;
- font-weight: 900;
- color:white;
-  position:absolute;
-  left:10px;
-  top:5px;
-}
-/* input[id="start"]:checked ~ main .box{
-    animation:doldol 4s linear infinite;
-  width:35vw;
-  height:35vh;
-} */
-/* input[id="start"]:checked ~ main{
-    perspective:900px;
-}
-input[id="start"]:checked ~ .label1{
-    display:none;
-}
-input[id="start"]:checked ~ .label2{
-    display:block;
-} */
-
-
-label:hover{
-  transform:scale(1.2);
-}
-label:active{
-  transform:scale(0.8);
-}
-.label2{
-  display:none;
-}
-main{
-  display:flex;
-  flex:auto;
-  background:url('https://image.freepik.com/free-vector/vector-illustration-of-beautiful-background-morning-jungle-bright-jungle-with-ferns-and-flowers-for-design-game-websites-and-mobile-phones-printing_212168-86.jpg') center/cover;
- 
-}
-.box{
-  transform-style:preserve-3d;
-  position:relative;  
-  margin: auto;
-  width:0px;
-  height:0px;
-  transition:all 300ms;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
 }
 
-.items{
-  background: rgba(0,0,0,0.2);
-  width:100%;
-  height:100%;
-  cursor:pointer;
-  line-height:300px;
-  position:absolute;
-  font-size:20vw; 
-  user-select: none;
-  /* backface-visibility:hidden; */
-}
-.items:active{
-    background: rgba(255,0,0,0.5);
-}
-.item1{
-  transform:rotateY(0deg) translateZ(30vw);
-}
-.item2{
-  transform:rotateY(60deg)translateZ(30vw);
-}
-.item3{
-  transform:rotateY(120deg)translateZ(30vw);
-}
-.item4{
-  transform:rotateY(180deg)translateZ(30vw);
-}
-.item5{
-  transform:rotateY(240deg)translateZ(30vw);
-}
-.item6{
-  transform:rotateY(300deg)translateZ(30vw);
-}
-img{
-  width:2rem;
-  }
-
-footer{
-  padding:0.2rem;
-  background:gray;
-  color:white;
-}
-.modal{
-  line-height: 79vh;
-  width:80%;
-  height:40vh;
-  background:url('/card.jpg') center/cover;
-  margin:auto;
-  position:absolute;
-  top:10%;
-  left:50%;
-  transform: translateX(-50%);
-  border-radius: 1rem;
-  padding:0.5rem;
-  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
-
-@keyframes doldol{
-  to{
-    transform:rotateY(360deg);
-  }
+.con {
+    margin: auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid 5px;
+    position: relative;
 }
 
-.lucky{
-  font-size: 2rem;
-  color:white;
+button {
+    font-size: 4vw;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid;
+    border-radius: 8px;
 }
-/* @media(min-width:1200px){
-  
- .box{
-  width:10vw;
-  height:10vh;
-  }
 
-  .items{
-    font-size:10vw; 
-  }
-  
-.item1{
+button:hover {
+    background-color: gold;
+}
+
+button:active {
+    background-color: #f03a17;
+    color: aliceblue;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background: gray;
+}
+
+input {
+    display: none;
+}
+
+.label2 {
+    cursor: pointer;
+    transition: all 100ms;
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+
+.label1 {
+    cursor: pointer;
+    transition: all 100ms;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+label:hover {
+    transform: scale(1.2);
+}
+
+label:active {
+    transform: scale(0.8);
+}
+
+.label2 {
+    display: none;
+}
+
+main {
+    border: 2px solid;
+    display: flex;
+    flex: auto;
+    background: url('https://image.freepik.com/free-vector/vector-illustration-of-beautiful-background-morning-jungle-bright-jungle-with-ferns-and-flowers-for-design-game-websites-and-mobile-phones-printing_212168-86.jpg') center/cover;
+}
+
+.box {
+    transform-style: preserve-3d;
+    position: relative;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    transition: all 300ms;
+}
+
+.items {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    line-height: 35vh;
+    position: absolute;
+    font-size: 20vw;
+    user-select: none;
+    /* backface-visibility:hidden; */
+}
+
+.items:active {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.item1 {
+    transform: rotateY(0deg) translateZ(30vw);
+}
+
+.item2 {
+    transform: rotateY(60deg)translateZ(30vw);
+}
+
+.item3 {
+    transform: rotateY(120deg)translateZ(30vw);
+}
+
+.item4 {
+    transform: rotateY(180deg)translateZ(30vw);
+}
+
+.item5 {
+    transform: rotateY(240deg)translateZ(30vw);
+}
+
+.item6 {
+    transform: rotateY(300deg)translateZ(30vw);
+}
+
+img {
+    width: 2rem;
+}
+
+footer {
+    padding: 0.2rem;
+    background: gray;
+    color: white;
+}
+
+.modal {
+    border: 2px solid;
+    line-height: 79vh;
+    width: 80%;
+    height: 40vh;
+    background: url('/card.jpg') center/cover;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes doldol {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.lucky {
+    font-size: 2rem;
+    color: white;
+}
+
+@media(min-width:1000px) {
+    .box {
+        width: 20vw;
+        height: 20vh;
+    }
+    .items {
+        font-size: 15vw;
+    }
+    /* .item1{
   transform:rotateY(0deg) translateZ(20vw);
 }
 .item2{
@@ -198,22 +201,5 @@ box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
 }
 .item6{
   transform:rotateY(300deg)translateZ(20vw);
+} */
 }
-
-  }
-   */
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
