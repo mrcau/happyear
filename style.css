@@ -18,6 +18,20 @@ body{
   border:solid 5px;  
   position:relative;
 }
+button{
+  font-size: 2rem;
+  font-weight: bold;
+  cursor:pointer;
+  outline: none;
+  border: 2px solid;
+}
+button:hover{
+  background-color: gold;
+}
+button:active{
+  background-color:#f03a17;
+  color: aliceblue;
+}
 header{
   font-size:1.8rem;
   font-weight:bold;
@@ -27,6 +41,9 @@ header{
 input{display:none;}
 
 label{
+  display:none;
+}
+.label2{
   cursor:pointer;
   transition:all 100ms;
  font-size:2rem;
@@ -34,20 +51,30 @@ label{
   right:10px;
   top:5px;
 }
-input[id="start"]:checked ~ main .box{
+.label1{
+  cursor:pointer;
+  transition:all 100ms;
+ font-size:2rem;
+ font-weight: 900;
+ color:white;
+  position:absolute;
+  left:10px;
+  top:5px;
+}
+/* input[id="start"]:checked ~ main .box{
     animation:doldol 4s linear infinite;
   width:35vw;
   height:35vh;
-}
-input[id="start"]:checked ~ main{
-    perspective:700px;
+} */
+/* input[id="start"]:checked ~ main{
+    perspective:900px;
 }
 input[id="start"]:checked ~ .label1{
     display:none;
 }
 input[id="start"]:checked ~ .label2{
     display:block;
-}
+} */
 
 
 label:hover{
@@ -81,12 +108,9 @@ main{
   cursor:pointer;
   line-height:300px;
   position:absolute;
-  font-size:18vw; 
+  font-size:20vw; 
   user-select: none;
   /* backface-visibility:hidden; */
-}
-.items:hover{
-    background: rgba(0,0,255,0.5);
 }
 .items:active{
     background: rgba(255,0,0,0.5);
@@ -109,11 +133,32 @@ main{
 .item6{
   transform:rotateY(300deg)translateZ(30vw);
 }
+img{
+  width:2rem;
+  }
+
 footer{
-  padding:1rem;
+  padding:0.2rem;
   background:gray;
   color:white;
 }
+.modal{
+  line-height: 79vh;
+  width:80%;
+  height:40vh;
+  background:url('/card.jpg') center/cover;
+  margin:auto;
+  position:absolute;
+  top:10%;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+  padding:0.5rem;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+}
+
 
 @keyframes doldol{
   to{
@@ -121,7 +166,43 @@ footer{
   }
 }
 
+.lucky{
+  font-size: 2rem;
+  color:white;
+}
+/* @media(min-width:1200px){
+  
+ .box{
+  width:10vw;
+  height:10vh;
+  }
 
+  .items{
+    font-size:10vw; 
+  }
+  
+.item1{
+  transform:rotateY(0deg) translateZ(20vw);
+}
+.item2{
+  transform:rotateY(60deg)translateZ(20vw);
+}
+.item3{
+  transform:rotateY(120deg)translateZ(20vw);
+}
+.item4{
+  transform:rotateY(180deg)translateZ(20vw);
+}
+.item5{
+  transform:rotateY(240deg)translateZ(20vw);
+}
+.item6{
+  transform:rotateY(300deg)translateZ(20vw);
+}
+
+  }
+   */
+  
 
 
 
