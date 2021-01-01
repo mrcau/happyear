@@ -54,9 +54,7 @@ const stop = () => {
     clearInterval(time);
 }
 
-
 stop();
-
 
 start.addEventListener('click', play);
 label2.addEventListener('click', stop);
